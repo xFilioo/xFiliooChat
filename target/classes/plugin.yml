@@ -1,0 +1,12 @@
+name: xFiliooChat
+version: '1.0'
+main: xfilioo.xfilioochat.XFiliooChat
+api-version: '1.20'
+commands:
+  chat:
+    description: Zarzadanie chatem
+    usage: /chat <clear|on|off|reload>
+permissions:
+  chatmanager.use:
+    description: Komenda /chat
+    default: op

@@ -1,0 +1,37 @@
+# Uprawnienia:
+# chatmanager.use - pozwala uzywac komendy /chat
+
+# Lista zablokowanych slow
+# Pisz malymi literami
+blocked-words:
+  - "zakazane"
+  - "slowo"
+  - "zakazaneslowo"
+
+# Cooldown w milisekundach na wysylanie wiadomości o tej samej tresci
+spam-cooldown-ms: 3000
+# Cooldown w milisekundach na wysylanie wiadomości o tej roznej tresci (dla graczy bez rangi, uprawnien)
+general-cooldown-ms: 5000
+
+# Cooldown w milisekundach na wysylanie wiadomości o tej roznej tresci dla rang
+# Aby to dzialalo trzeba nadac randze uprawnienia:
+# chatmanager.nazwa-rangi
+# przykładowo: chatmanager.default, chatmanager.vip
+rank-cooldowns:
+  default: 5000
+  vip: 3000
+
+# Wiadomosci
+# Do wiadomosci chat-enabled-by, chat-disabled-by, chat-cleared-by
+# administrator okreslany jest za pomoca: {player}
+messages:
+  blocked-word: "&cTwoja wiadomość zawiera zablowane słowo!"
+  spam: "&cWykryto spam - te same wiadomości!"
+  cooldown: "&cWykryto spam - zbyt szybkie wysyłanie wiadomości!"
+  chat-disabled: "&cChat jest obecnie wyłączony!"
+  no-permission: "&fNieznana komenda."
+  usage: "&cUżycie: /chat <clear|on|off|reload> (clear może nie działać u każdego przez nie pokazywanie zduplikowanych wiadomosci)"
+  chat-enabled-by: "&aChat został włączony przez: {player}"
+  chat-disabled-by: "&cChat został wyłączony przez: {player}"
+  chat-cleared-by: "&aChat został wyczyszczony przez: {player}"
+  chat-config-reloaded: "&aPrzeładowano config!"
